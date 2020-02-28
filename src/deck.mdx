@@ -1,0 +1,109 @@
+import { Head, themes, Appear } from 'mdx-deck'
+import { CodeSurfer } from "code-surfer"
+import { Content, Image } from './components'
+import customTheme from './theme'
+
+export const theme = customTheme
+
+<Head>
+  <title>Vamos falar sobre testes?</title>
+</Head>
+<Content />
+
+---
+
+## Por quê fazer testes?
+
+<ul>
+  <Appear>
+    <li>Garantia que o seu código realmente funciona</li>
+    <li>Serve como documentação</li>
+    <li>Facilita o debug de uma função</li>
+    <li>Confiabilidade</li>
+    <li>Sua vida muito mais feliz!</li>
+  </Appear>
+</ul>
+
+---
+
+## Tipos de testes
+
+<ul>
+  <Appear>
+    <li>Testes unitários</li>
+    <li>Testes de integração</li>
+    <li>Testes de componentes</li>
+    <li>Testes de snapshots</li>
+  </Appear>
+</ul>
+
+---
+
+## Quais libraries posso usar para fazer testes?
+
+Temos varias libraries, mas as principais são: Enzyme e Jest
+
+---
+
+## Como organizar os testes?
+
+Podemos fazer de dois jeitos
+
+<ul>
+  <Appear>
+    <li>Criando a pasta __tests__ na raiz do projeto</li>
+    <li>Criando o arquivo com o sufixo .test.[js/jsx/ts/tsx] no mesmo nivel do arquivo testado</li>
+  </Appear>
+</ul>
+
+---
+
+## Organização dos testes prós(__tests__)
+
+<ul>
+  <Appear>
+    <li>Todos os testes ficam centralizados em um lugar</li>
+  </Appear>
+</ul>
+
+---
+
+## Organização dos testes contras(__tests__)
+
+<ul>
+  <Appear>
+    <li>Exige que refaça a mesma estrutura do projeto na pasta __tests__</li>
+    <li>Com o passar do tempo vai ficando um pouco difícil achar os testes</li>
+  </Appear>
+</ul>
+
+---
+
+## Organização dos testes prós(.test.js)
+
+<ul>
+  <Appear>
+    <li>O arquivo de teste fica junto com o arquivo que possui as funções testadas</li>
+    <li>Fácil de localizar onde estão os testes</li>
+  </Appear>
+</ul>
+
+---
+
+## Organização dos testes contras(.test.js)
+
+<ul>
+  <Appear>
+    <li>A pasta onde esta o arquivo de função/component, pode ficar um pouco grande</li>
+  </Appear>
+</ul>
+
+---
+
+## E o TDD, onde fica no meio de tudo isso?
+
+---
+
+## Agora a parte boa
+
+Vamos lá pro código!
